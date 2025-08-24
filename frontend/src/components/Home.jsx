@@ -12,7 +12,7 @@ const Home = () => {
         <HeroSection />
         <CategoryCarousel />
         <LatestJobs />
-        <h1>working</h1>
+        
 
     </div>
   );
