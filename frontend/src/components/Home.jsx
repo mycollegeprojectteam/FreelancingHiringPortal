@@ -6,6 +6,7 @@ import LatestJobs from './LatestJobs';
 import Footer from './Footer';
 import ExtraSection from './ExtraSection';
 import HowItWorks from './HowItWorks';
+import ReviewSection from './ReviewSection';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <ExtraSection />
         <HowItWorks />
         <LatestJobs />
+        <ReviewSection />
         <Footer />
 
     </div>

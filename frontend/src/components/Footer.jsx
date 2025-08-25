@@ -4,7 +4,7 @@ import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#ffffff] m-4 rounded-xl shadow-md">
+    <footer className="bg-[#ffffff] m-4 mr-12 ml-12 rounded-xl shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-10">
         {/* Top CTA Section */}
         <div className="text-center mb-10">

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/ui/button"
 import {
@@ -12,17 +12,19 @@ import { LogOut, Settings, User } from 'lucide-react'
 
 const Navbar = () => {
   const user = false;
+
+  
   return (
-    <div className="bg-[#ffffff] m-4 rounded-xl">
+    <div className="bg-[#ffffff] m-4 mr-12 ml-12 rounded-xl">
       <div className='flex items-center justify-between px-10 h-16'>
         <div>
-          <h1 className="text-black  p-4 text-2xl font-bold first:ml-0">Skill<span className='text-[#1DA1F2]'>Factory</span></h1>
+          <Link to='/'> <h1 className="text-black  p-4 text-2xl font-bold first:ml-0">Skill<span className='text-[#1DA1F2]'>Factory</span></h1></Link>
         </div>
         <div >
           <ul className='flex font-medium gap-5 items-center '>
-            <li>Home</li>
-            <li>Jobs</li>
-            <li>Browse</li>
+            <Link to='/'><li>Home</li></Link>
+            <Link to='/jobs'><li>Jobs</li></Link>
+            <Link to='/browse'><li>Browse</li></Link>
           </ul>
         </div>
 
