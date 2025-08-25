@@ -118,7 +118,7 @@ const Signup = () => {
                   <Input accept="image/*" type="file" onChange={changeFileHandler} className='cursor-pointer' />
                 </div>
               </div>
-              <Button type="submit" className='w-full bg-[#db0b0b] text-white py-2 rounded-lg my-4 hover:bg-red-700 transition duration-300'>Sign Up</Button>
+              <Button type="submit" className='w-full bg-[#1DA1F2] text-white py-2 rounded-lg my-4 hover:bg-[#138edb] transition duration-300'>Sign Up</Button>
               <span className='text-sm flex items-center justify-center'>Already have an account? <Link to='/login' className='text-blue-500 underline mr-5'>Login</Link></span>
             </form>
 

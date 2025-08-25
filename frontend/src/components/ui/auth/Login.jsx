@@ -92,7 +92,7 @@ const Login = () => {
 
 
           </div>
-          <Button type="submit" className='w-full bg-[#db0b0b] text-white py-2 rounded-lg my-1 hover:bg-red-700 transition duration-300'>Login</Button>
+          <Button type="submit" className='w-full bg-[#1DA1F2] text-white py-2 rounded-lg my-1 hover:bg-[#138edb] transition duration-300'>Login</Button>
           <span className='text-sm flex items-center justify-center mt-2'>Don't have an account? <Link to='/signup' className='text-blue-500 underline mr-5'>Sign Up</Link></span>
         </form>
 
