@@ -15,7 +15,7 @@ const Navbar = () => {
 
   
   return (
-    <div className="bg-[#ffffff] m-4 mr-12 ml-12 rounded-xl">
+    <div className="bg-[#ffffff] m-4 mr-12 ml-12 rounded-xl shadow-md">
       <div className='flex items-center justify-between px-10 h-16'>
         <div>
           <Link to='/'> <h1 className="text-black  p-4 text-2xl font-bold first:ml-0">Skill<span className='text-[#1DA1F2]'>Factory</span></h1></Link>
@@ -23,8 +23,8 @@ const Navbar = () => {
         <div >
           <ul className='flex font-medium gap-5 items-center '>
             <Link to='/'><li>Home</li></Link>
-            <Link to='/jobs'><li>Jobs</li></Link>
-            <Link to='/browse'><li>Browse</li></Link>
+            <Link><li>Jobs</li></Link>
+            <Link><li>Browse</li></Link>
           </ul>
         </div>
 

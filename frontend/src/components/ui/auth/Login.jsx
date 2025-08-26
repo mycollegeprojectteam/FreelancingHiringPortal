@@ -51,7 +51,7 @@ const Login = () => {
     <div>
       <Navbar />
       <div className='flex items-center justify-center max-w-4xl mx-auto '>
-        <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-xl p-4 my-10 shadow-md'>
+        <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-xl p-4 my-10 shadow-md bg-white'>
           <h1 className='text-4xl mb-5 mt-[-4px] font-bold text-center'>Login</h1>
 
           <div className='my-2'>

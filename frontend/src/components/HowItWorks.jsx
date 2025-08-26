@@ -36,7 +36,7 @@ const HowItWorks = () => {
         </p>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ml-12 mr-12">
           {steps.map((step, index) => (
             <div
               key={index}
