@@ -1,12 +1,12 @@
-import { Badge } from './ui/badge';
 import React from "react";
-import { Button } from './ui/button';
-import { Bookmark } from 'lucide-react';
-import { Avatar, AvatarImage } from './ui/avatar';
+import { Button } from "./ui/button";
+import { Badge } from "./ui/badge"; 
+import { Bookmark } from "lucide-react";
+import { Avatar, AvatarImage } from "./ui/avatar";
 
-const LatestJobCards = () => {
-    return (
-       <div className="bg-white rounded-2xl shadow-xl p-6 space-y-4">
+const Job = () => {
+  return (
+    <div className="bg-white rounded-2xl shadow-xl p-6 gap-4 space-y-4">
       {/* Top bar */}
       <div className="flex items-center justify-between text-gray-500 text-sm mt-[-14px]">
         <p className="text-sm text-gray-500">2 days ago</p>
@@ -50,8 +50,7 @@ const LatestJobCards = () => {
         <Button className="bg-[#1DA1F2]">Save For Later</Button>
       </div>
     </div>
-
-    );
+  );
 };
 
-export default LatestJobCards;
+export default Job;

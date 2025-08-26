@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Login from './components/ui/auth/Login';
 import Signup from './components/ui/auth/Signup';
 import Home from './components/Home';
-// import Jobs from './components/Jobs';
+import Jobs from './components/Jobs';
+import Browse from './components/Browse';
 
 // Error fallback component
 function ErrorPage() {
@@ -33,10 +34,14 @@ const appRouter = createBrowserRouter([
     path: '/signup',
     element: <Signup />,
   },
-  // {
-  //   path: '/jobs',
-  //   element: <Jobs />
-  // }
+  {
+    path: '/jobs',
+    element: <Jobs />
+  },
+  {
+    path: '/browse',
+    element: <Browse />
+  }
 ]);
 
 function App() {

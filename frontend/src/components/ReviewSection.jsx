@@ -68,7 +68,7 @@ const ReviewSection = () => {
   };
 
   return (
-    <section className="bg-white p-10 rounded-2xl shadow-md max-w-full mx-auto text-center ml-12 mr-12 mb-12 transition duration-500 ease-in-out">
+    <section className="bg-white p-10 rounded-2xl shadow-md max-w-full mx-auto text-center ml-6 mr-6 mb-12 transition duration-500 ease-in-out">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-12">
         Satisfied Customers Are Our <span className="text-[#1DA1F2]">  Best Ads. </span>
       </h2>
