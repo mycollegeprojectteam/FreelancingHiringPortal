@@ -5,7 +5,7 @@ import { Search } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="text-center mt-12">
+    <div className="max-w-[1450px] mx-auto text-center mt-12">
       <span className="px-4 py-2 text-[#1DA1F2] font-medium">No.1 Freelancing Portal</span>
       <h1 className="text-5xl md:text-5xl font-bold mt-6">Search, Apply & <br /> Get Your <span className="text-[#1DA1F2]">Dream Jobs</span></h1>
       <p className="m-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, modi!</p>

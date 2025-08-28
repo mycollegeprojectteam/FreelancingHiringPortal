@@ -17,7 +17,8 @@ const category = [
 
 const CategoryCarousel = () => {
     return (
-        <Carousel
+        <div>
+            <Carousel
             className="w-full max-w-xl mx-auto my-20"
             opts={{
                 loop: true, // enables infinite looping
@@ -35,10 +36,16 @@ const CategoryCarousel = () => {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="absolute left-0 z-10 flex items-center justify-center w-10 h-full bg-white rounded-l-lg shadow-md">
+                <span className="sr-only">Previous</span>
+            </CarouselPrevious>
+            <CarouselNext className="absolute right-0 z-10 flex items-center justify-center w-10 h-full bg-white rounded-r-lg shadow-md">
+                <span className="sr-only">Next</span>
+            </CarouselNext>
         </Carousel>
 
+        </div>
+        
     )
 }
 

@@ -12,12 +12,12 @@ const ExtraSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-white border-t border-gray-100 rounded-2xl m-4 ml-6 mr-6 shadow-md">
+    <section className="py-12 bg-white border-t border-gray-100 rounded-2xl max-w-[1450px] m-6 mx-auto shadow-md">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Trusted by <span className="text-[#1DA1F2]">Top Companies</span>
         </h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-600 m-6 mt-[-10px]">
           Building careers with the best in the industry
         </p>
       </div>
