@@ -4,90 +4,62 @@ import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#ffffff] m-4 mr-6 ml-6 rounded-xl shadow-md">
+    <footer className="bg-white rounded-xl shadow-inner mt-12">
       <div className="max-w-7xl mx-auto px-6 py-10">
-        {/* Top CTA Section */}
-        <div className="text-center mb-10">
+        {/* Top CTA */}
+        <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Find & Hire The Best{" "}
-            <span className="text-[#1DA1F2]">Freelancers</span> For Your Projects
+            Hire Top <span className="text-[#1DA1F2]">Freelancers</span> Effortlessly
           </h2>
-          <p className="text-gray-600 mt-2 text-sm">
-            Join Skill<span className="text-[#1DA1F2]">Factory</span> and
-            connect with top talent or your next career opportunity.
+          <p className="text-gray-500 mt-2 text-sm">
+            Connect with skilled professionals and grow your projects faster.
           </p>
-
-          <div className="mt-6 flex justify-center">
-            <div className="flex w-full max-w-md rounded-full overflow-hidden border border-gray-200">
-              <input
-                type="email"
-                placeholder="Enter your email to get started"
-                className="w-full px-4 py-2 focus:outline-none"
-              />
-              <button className="bg-[#1DA1F2] hover:bg-[#1686cb] text-white px-6 py-2 font-medium">
-                Get Started
-              </button>
-            </div>
-          </div>
         </div>
 
-        {/* Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
-          {/* Brand */}
+        {/* Links & Socials */}
+        <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center sm:text-left">
+          {/* About */}
           <div>
-            <h1 className="text-2xl font-bold text-black">
-              Skill<span className="text-[#1DA1F2]">Factory</span>
-            </h1>
-            <p className="text-gray-600 mt-3 text-sm">
-              A platform that connects businesses with top freelancers and helps
-              professionals land their dream jobs.
+            <h3 className="font-semibold text-gray-900 mb-3">SkillFactory</h3>
+            <p className="text-gray-500 text-sm">
+              A platform connecting businesses with top freelancers worldwide.
             </p>
           </div>
 
-          {/* For Freelancers */}
+          {/* Freelancers */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-3">For Freelancers</h3>
-            <ul className="space-y-2 text-gray-600 text-sm">
-              <li><Link to="/">Find Work</Link></li>
-              <li><Link to="/">Create Profile</Link></li>
-              <li><Link to="/">Success Stories</Link></li>
-              <li><Link to="/">Guides & Resources</Link></li>
+            <h3 className="font-semibold text-gray-900 mb-3">Freelancers</h3>
+            <ul className="space-y-2 text-gray-500 text-sm">
+              <li><Link to="/" className="hover:text-[#1DA1F2]">Find Work</Link></li>
+              <li><Link to="/" className="hover:text-[#1DA1F2]">Create Profile</Link></li>
+              <li><Link to="/" className="hover:text-[#1DA1F2]">Resources</Link></li>
             </ul>
           </div>
 
-          {/* For Employers */}
+          {/* Employers */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-3">For Employers</h3>
-            <ul className="space-y-2 text-gray-600 text-sm">
-              <li><Link to="/">Post a Job</Link></li>
-              <li><Link to="/">Browse Freelancers</Link></li>
-              <li><Link to="/">Enterprise Solutions</Link></li>
-              <li><Link to="/">Hiring Guides</Link></li>
+            <h3 className="font-semibold text-gray-900 mb-3">Employers</h3>
+            <ul className="space-y-2 text-gray-500 text-sm">
+              <li><Link to="/" className="hover:text-[#1DA1F2]">Post Job</Link></li>
+              <li><Link to="/" className="hover:text-[#1DA1F2]">Browse Talent</Link></li>
+              <li><Link to="/" className="hover:text-[#1DA1F2]">Guides</Link></li>
             </ul>
           </div>
 
           {/* Social Media */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-3">Connect With Us</h3>
-            <div className="flex justify-center md:justify-start gap-4">
-              <a href="https://facebook.com" className="text-gray-500 hover:text-[#1DA1F2]">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="https://twitter.com" className="text-gray-500 hover:text-[#1DA1F2]">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="https://linkedin.com" className="text-gray-500 hover:text-[#1DA1F2]">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="https://instagram.com" className="text-gray-500 hover:text-[#1DA1F2]">
-                <Instagram className="w-5 h-5" />
-              </a>
+            <h3 className="font-semibold text-gray-900 mb-3">Follow Us</h3>
+            <div className="flex justify-center sm:justify-start gap-4">
+              <a href="https://facebook.com" className="text-gray-500 hover:text-[#1DA1F2]"><Facebook className="w-5 h-5" /></a>
+              <a href="https://twitter.com" className="text-gray-500 hover:text-[#1DA1F2]"><Twitter className="w-5 h-5" /></a>
+              <a href="https://linkedin.com" className="text-gray-500 hover:text-[#1DA1F2]"><Linkedin className="w-5 h-5" /></a>
+              <a href="https://instagram.com" className="text-gray-500 hover:text-[#1DA1F2]"><Instagram className="w-5 h-5" /></a>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 border-t border-gray-200 pt-6 text-center text-sm text-gray-500">
+        <div className="mt-10 border-t border-gray-200 pt-6 text-center text-sm text-gray-400">
           © 2024 SkillFactory. All rights reserved.
         </div>
       </div>

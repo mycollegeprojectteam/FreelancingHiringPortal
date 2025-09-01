@@ -12,12 +12,12 @@ const ExtraSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-white border-t border-gray-100 rounded-2xl max-w-[1450px] m-6 mx-auto shadow-md">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+    <section className="py-12 bg-white border-gray-100 shadow-md">
+      <div className="text-center max-w-6xl mx-auto px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           Trusted by <span className="text-[#1DA1F2]">Top Companies</span>
         </h2>
-        <p className="text-gray-600 m-6 mt-[-10px]">
+        <p className="text-gray-600 m-t-3 mb-10">
           Building careers with the best in the industry
         </p>
       </div>
@@ -29,7 +29,7 @@ const ExtraSection = () => {
             key={idx}
             src={logo}
             alt="company logo"
-            className="h-6 w-auto object-contain  grayscale hover:opacity-100 hover:grayscale-0 transition"
+            className="h-6 w-auto object-contain  grayscale hover:opacity-100 hover:grayscale-0 transform transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer"
           />
         ))}
       </div>

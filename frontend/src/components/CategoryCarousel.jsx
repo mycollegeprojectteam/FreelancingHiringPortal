@@ -1,52 +1,53 @@
-import react from 'react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel';
-import { Button } from './ui/button';
+import React from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
+import { Button } from "./ui/button";
 
-
-const category = [
-    "Frontend Developer",
-    "Backend Developer",
-    "Full Stack Developer",
-    "UI/UX Designer",
-    "Data Scientist",
-    "Graphic Designer",
-    "Data Entry",
-    "Content Writing",
-    "Copy Writing"
-]
+const categories = [
+  "Frontend Developer",
+  "Backend Developer",
+  "Full Stack Developer",
+  "UI/UX Designer",
+  "Data Scientist",
+  "Graphic Designer",
+  "Data Entry",
+  "Content Writing",
+  "Copy Writing",
+];
 
 const CategoryCarousel = () => {
-    return (
-        <div>
-            <Carousel
-            className="w-full max-w-xl mx-auto my-20"
-            opts={{
-                loop: true, // enables infinite looping
-            }}
-        >
-            <CarouselContent className='p-4 gap-4'>
-                {category.map((cat, index) => (
-                    <CarouselItem
-                        className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
-                        key={index}
-                    >
-                        <Button variant="secondary" className="w-full rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                            {cat}
-                        </Button>
-                    </CarouselItem>
-                ))}
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-0 z-10 flex items-center justify-center w-10 h-full bg-white rounded-l-lg shadow-md">
-                <span className="sr-only">Previous</span>
-            </CarouselPrevious>
-            <CarouselNext className="absolute right-0 z-10 flex items-center justify-center w-10 h-full bg-white rounded-r-lg shadow-md">
-                <span className="sr-only">Next</span>
-            </CarouselNext>
-        </Carousel>
+  return (
+    <div className="w-full my-12 flex justify-center">
+      <div className="relative w-full max-w-5xl px-6">
+        <Carousel opts={{ loop: true }}>
+          <CarouselContent className="flex gap-6">
+            {categories.map((cat, index) => (
+              <CarouselItem
+                key={index}
+                className="basis-1/1 sm:basis-1/2 lg:basis-1/3 flex justify-center"
+              >
+                <Button
+                  variant="ghost"
+                  className="w-full max-w-sm rounded-xl border border-gray-200 bg-white/70 backdrop-blur-sm text-gray-800 shadow-sm hover:shadow-md hover:bg-white transition-all duration-200"
+                >
+                  {cat}
+                </Button>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
 
-        </div>
-        
-    )
-}
+          {/* Controls */}
+          <CarouselPrevious className="absolute -left-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-9 h-9 rounded-full shadow-lg bg-white/80 hover:bg-white transition-all duration-200" />
+          <CarouselNext className="absolute -right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-9 h-9 rounded-full shadow-lg bg-white/80 hover:bg-white transition-all duration-200" />
+        </Carousel>
+      </div>
+    </div>
+  );
+};
 
 export default CategoryCarousel;
